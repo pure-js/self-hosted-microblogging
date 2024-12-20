@@ -14,9 +14,7 @@ const ReactCompilerConfig = {
 
 export default defineConfig({
   base:
-    process.env.NODE_ENV === 'production'
-      ? '/local-microblogging-client/'
-      : '/',
+    process.env.NODE_ENV === 'production' ? '/self-hosted-microblogging/' : '/',
   build: {
     emptyOutDir: true,
     cssMinify: 'lightningcss',
@@ -46,7 +44,7 @@ export default defineConfig({
     alias: [
       {
         find: '~/',
-        replacement: '/apps/client/',
+        replacement: '/app/',
       },
     ],
   },

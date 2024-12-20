@@ -9,6 +9,9 @@ env:
 jobs:
   lighthouseci:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./apps/client
     strategy:
       matrix:
         node-version: [22]

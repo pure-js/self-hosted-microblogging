@@ -29,6 +29,7 @@ rules:
   unicorn/filename-case: ['error', { 'case': 'kebabCase' }]
   require-await: error
   react-compiler/react-compiler: error
+  import/extensions: off
 settings:
   import/resolver:
     alias:

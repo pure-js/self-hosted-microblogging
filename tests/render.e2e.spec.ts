@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const BASE_PATH = '/local-microblogging-client';
+const BASE_PATH = '/self-hosted-microblogging';
 
 test('homepage has Micrblogging in title and get started link linking to the new post page', async ({
   page,
