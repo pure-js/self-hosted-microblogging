@@ -21,9 +21,6 @@
   },
   "author": "pure-js",
   "devDependencies": {
-    "@nx/eslint": "20.1.4",
-    "@nx/vite": "20.1.4",
-    "@nx/web": "20.1.4",
     "@playwright/test": "^1.49.1",
     "@tailwindcss/typography": "^0.5.7",
     "@types/react": "^19.0.1",
@@ -54,7 +51,6 @@
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-unicorn": "^55.0.0",
     "msw": "^1.3.3",
-    "nx": "20.1.4",
     "postcss": "^8.4.41",
     "postcss-nesting": "13.0.0",
     "prettier": "3.4.1",
@@ -88,6 +84,5 @@
   "msw": {
     "workerDirectory": "public"
   },
-  "packageManager": "pnpm@9.15.1",
-  "nx": {}
+  "packageManager": "pnpm@9.15.1"
 }
