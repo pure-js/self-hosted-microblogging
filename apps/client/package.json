@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "2.12.1",
-  "main": "apps/client/app/index.tsx",
+  "main": "app/index.tsx",
   "homepage": "https://pure-js.github.io/self-hosted-microblogging/",
   "type": "module",
   "scripts": {
@@ -19,15 +19,7 @@
     "format:check": "prettier --check .",
     "format:write": "prettier --write ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pure-js/self-hosted-microblogging.git"
-  },
   "author": "pure-js",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pure-js/self-hosted-microblogging/issues"
-  },
   "devDependencies": {
     "@nx/eslint": "20.1.4",
     "@nx/vite": "20.1.4",
@@ -96,11 +88,6 @@
   "msw": {
     "workerDirectory": "public"
   },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
-  },
-  "packageManager": "pnpm@9.14.4",
+  "packageManager": "pnpm@9.15.1",
   "nx": {}
 }

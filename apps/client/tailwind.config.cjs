@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable global-require */
 module.exports = {
-  content: ['./apps/**/*.{jsx,tsx}'],
+  content: ['./app/**/*.{jsx,tsx}'],
   // theme: {
   //   extend: {},
   // },

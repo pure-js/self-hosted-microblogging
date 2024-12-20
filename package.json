@@ -7,9 +7,9 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "vite serve",
+    "dev": "nx g client serve",
     "build": "nx g client build",
-    "preview": "vite preview",
+    "preview": "nx g client preview",
     "typecheck": "tsc -b",
     "test": "vitest",
     "coverage": "vitest run --coverage",
@@ -95,14 +95,6 @@
     "node": ">=20.9",
     "pnpm": ">=9.8"
   },
-  "msw": {
-    "workerDirectory": "public"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
-  },
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.1",
   "nx": {}
 }
