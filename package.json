@@ -8,7 +8,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "vite serve",
-    "build": "vite build",
+    "build": "nx g client build",
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "test": "vitest",
