@@ -2,7 +2,7 @@
   "name": "client",
   "version": "2.12.1",
   "main": "apps/client/app/index.tsx",
-  "homepage": "https://pure-js.github.io/local-microblogging-client/",
+  "homepage": "https://pure-js.github.io/self-hosted-microblogging/",
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pure-js/local-microblogging-client.git"
+    "url": "git+https://github.com/pure-js/self-hosted-microblogging.git"
   },
   "author": "pure-js",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pure-js/local-microblogging-client/issues"
+    "url": "https://github.com/pure-js/self-hosted-microblogging/issues"
   },
   "devDependencies": {
     "@nx/eslint": "20.1.4",

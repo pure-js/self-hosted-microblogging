@@ -39,7 +39,7 @@ const config: PlaywrightTestConfig = {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'http:/localhost:4173/local-microblogging-client/',
+    baseURL: 'http:/localhost:4173/self-hosted-microblogging/',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
@@ -103,7 +103,7 @@ const config: PlaywrightTestConfig = {
   webServer: {
     cwd: './apps/client',
     command: 'pnpm run build && pnpm run preview',
-    url: 'http://localhost:4173/local-microblogging-client/',
+    url: 'http://localhost:4173/self-hosted-microblogging/',
     reuseExistingServer: !process.env.CI,
   },
 };
