@@ -7,9 +7,6 @@
     "module": "ESNext",
     "rootDir": "./",
     "moduleResolution": "Node",
-    "paths": {
-      "~/*": ["./apps/client/app/*"]
-    },
     "resolveJsonModule": true,
     "allowJs": false,
     "sourceMap": true,
@@ -21,6 +18,5 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true
-  },
-  "include": ["apps/client", "apps/client/vite-env.d.ts"]
+  }
 }
