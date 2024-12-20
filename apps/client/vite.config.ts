@@ -46,7 +46,7 @@ export default defineConfig({
     alias: [
       {
         find: '~/',
-        replacement: './app/',
+        replacement: '/app/',
       },
     ],
   },
