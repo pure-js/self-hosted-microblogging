@@ -2,5 +2,8 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "npm.packageManager": "pnpm",
-  "typescript.preferences.preferTypeOnlyAutoImports": true
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "github-actions.workflows.pinned.workflows": [
+    "dynamic/pages/pages-build-deployment"
+  ]
 }

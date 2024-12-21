@@ -7,4 +7,4 @@ coverage
 pnpm-lock.yaml
 
 CHANGELOG.md
-public/mockServiceWorker.js
+apps/**/public/mockServiceWorker.js

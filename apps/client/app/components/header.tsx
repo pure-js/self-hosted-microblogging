@@ -9,7 +9,7 @@ function Header() {
   }, []);
 
   return (
-    <nav className="navbar mb-3 bg-neutral text-neutral-content">
+    <nav className="navbar bg-neutral text-neutral-content mb-3">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost text-xl normal-case">
           Microblogging
