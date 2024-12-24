@@ -20,3 +20,6 @@ updates:
         patterns:
           - 'eslint*'
           - '@typescript-eslint/*'
+      nx-group:
+        patterns:
+          - '@nx/*'
