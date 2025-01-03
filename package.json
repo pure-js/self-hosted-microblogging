@@ -16,7 +16,7 @@
     "e2e": "playwright test",
     "deploy": "act -j publish",
     "release": "standard-version",
-    "lint": "eslint apps/client --ext .tsx,.jsx,.js,.ts",
+    "lint": "eslint apps/**/* --ext .tsx,.jsx,.js,.ts",
     "format:check": "prettier --check .",
     "format:write": "prettier --write ."
   },

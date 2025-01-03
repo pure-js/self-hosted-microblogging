@@ -1,4 +1,4 @@
-FROM node:20-alpine AS dependencies-env
+FROM node:22-alpine AS dependencies-env
 RUN npm i -g pnpm
 COPY . /app
 
