@@ -23,7 +23,6 @@
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@react-router/dev": "^7.1.1",
-    "@tailwindcss/typography": "^0.5.7",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
     "@types/uuid": "^9.0.0",
@@ -68,6 +67,7 @@
     "@growthbook/growthbook-react": "^0.20.0",
     "@react-router/node": "^7.1.1",
     "@react-router/serve": "^7.1.1",
+    "@tailwindcss/typography": "^0.5.15",
     "@vanilla-extract/css": "^1.15.5",
     "daisyui": "^4.12.14",
     "dexie": "^4.0.8",
