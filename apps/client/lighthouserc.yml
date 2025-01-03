@@ -7,8 +7,8 @@ ci:
       - 'http://localhost:4173/self-hosted-microblogging/posts/1'
       - 'http://localhost:4173/self-hosted-microblogging/posts/1/edit'
       - 'http://localhost:4173/self-hosted-microblogging/posts/new'
-    staticDistDir: './build'
-    # isSinglePageApplication: true
+    # staticDistDir: './dist'
+    isSinglePageApplication: true
   assert:
     assertMatrix:
       - matchingUrlPattern: '.*'
