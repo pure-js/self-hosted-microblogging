@@ -16,7 +16,7 @@
     "e2e": "playwright test",
     "deploy": "act -j publish",
     "release": "standard-version",
-    "lint": "eslint apps --ext .tsx,.jsx,.js,.ts",
+    "lint": "eslint apps/client --ext .tsx,.jsx,.js,.ts",
     "format:check": "prettier --check .",
     "format:write": "prettier --write ."
   },
@@ -41,7 +41,7 @@
     "@vitest/ui": "^1.6.0",
     "browserslist": "~4.22.1",
     "chromatic": "~9.0.0",
-    "eslint": "^8.57.1",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-love": "~43.1.0",

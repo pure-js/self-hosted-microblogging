@@ -42,7 +42,7 @@ importers:
         specifier: ~9.0.0
         version: 9.0.0
       eslint:
-        specifier: ^8.57.1
+        specifier: ^8.57.0
         version: 8.57.1
       eslint-config-airbnb:
         specifier: ^19.0.4
