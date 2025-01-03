@@ -49,10 +49,10 @@ To build and run using Docker:
 
 ```sh
 # For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
+docker build -f apps/client/Dockerfile.pnpm -t app-client .
 
 # Run the container
-docker run -p 3000:3000 my-app
+docker run -p 3000:3000 app-client
 ```
 
 The containerized application can be deployed to any platform that supports Docker, including:
