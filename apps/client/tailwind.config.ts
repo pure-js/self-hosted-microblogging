@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 export default {
-  content: ['./apps/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}'],
+  content: ['./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       fontFamily: {
@@ -18,5 +18,9 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+  daisyui: {
+    themes: ['forest', 'winter'],
+  },
+  darkMode: ['class', '[data-theme="forest"]'],
 } satisfies Config;
