@@ -9,8 +9,9 @@
 # Node modules
 node_modules/
 
-# Build
+# Artifacts
 dist/
+build/
 
 # TypeScript build
 tsconfig.tsbuildinfo
@@ -27,6 +28,7 @@ storybook-static/
 # Test Coverage
 coverage/
 
+# React router
 .react-router/
 
 # Playwright

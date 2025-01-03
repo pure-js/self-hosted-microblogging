@@ -6,5 +6,12 @@
       "~/*": ["./app/*"]
     }
   },
-  "include": ["app", "./vite-env.d.ts"]
+  "include": [
+    "./app",
+    "./vite-env.d.ts",
+    "**/.server/**/*",
+    "**/.client/**/*",
+    ".react-router/types/**/*"
+  ],
+  "types": ["node", "vite/client"]
 }

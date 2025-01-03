@@ -22,6 +22,7 @@
   "author": "pure-js",
   "devDependencies": {
     "@playwright/test": "^1.49.1",
+    "@react-router/dev": "^7.1.1",
     "@tailwindcss/typography": "^0.5.7",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
@@ -60,17 +61,20 @@
     "typescript": "^5.7.2",
     "vite": "^6.0.1",
     "vite-plugin-pwa": "^0.21.1",
+    "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^2.0.5"
   },
   "dependencies": {
     "@growthbook/growthbook-react": "^0.20.0",
+    "@react-router/node": "^7.1.1",
+    "@react-router/serve": "^7.1.1",
     "@vanilla-extract/css": "^1.15.5",
     "daisyui": "^4.12.14",
     "dexie": "^4.0.8",
     "dexie-react-hooks": "^1.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.0.2",
+    "react-router": "^7.1.1",
     "theme-change": "^2.5.0",
     "uuid": "^9.0.0"
   },
