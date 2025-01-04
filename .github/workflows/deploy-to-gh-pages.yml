@@ -36,10 +36,11 @@ jobs:
         run: pnpm run build
         env:
           VITE_GROWTH_BOOK_KEY: ${{ secrets.VITE_GROWTH_BOOK_KEY }}
-      - name: Upload artifact
+      - name: Upload static files as artifact
+        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/'
+          path: 'dist/'
 
   deploy:
     needs: build
