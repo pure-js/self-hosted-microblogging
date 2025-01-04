@@ -5,6 +5,7 @@
 // import tailwindcss from 'tailwindcss';
 // import tsconfigPaths from 'vite-tsconfig-paths';
 
+import MillionLint from '@million/lint';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
@@ -26,13 +27,15 @@ export default defineConfig({
     cssMinify: 'lightningcss',
   },
   plugins: [
+    MillionLint.vite({
+      enabled: true,
+    }),
     react({
       babel: {
         plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
       },
     }),
-    vanillaExtractPlugin(),
-    // reactRouter(),
+    vanillaExtractPlugin(), // reactRouter(),
     // tsconfigPaths(),
     VitePWA(),
   ],

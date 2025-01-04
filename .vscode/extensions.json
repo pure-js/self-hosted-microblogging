@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "github.vscode-github-actions",
     "github.vscode-pull-request-github",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "million.million-lint"
   ]
 }
