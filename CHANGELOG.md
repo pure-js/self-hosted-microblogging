@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.12.2](https://github.com/pure-js/self-hosted-microblogging/compare/v2.12.1...v2.12.2) (2025-01-04)
+
+
+### Performance Improvements
+
+* add million lint ([#432](https://github.com/pure-js/self-hosted-microblogging/issues/432)) ([7955675](https://github.com/pure-js/self-hosted-microblogging/commit/7955675ec2876ff61418a6d873bf72e794155795))
+
 ## [2.12.1](https://github.com/pure-js/local-microblogging-client/compare/v2.12.0...v2.12.1) (2024-11-25)
 
 
