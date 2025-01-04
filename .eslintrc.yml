@@ -36,8 +36,8 @@ settings:
       map:
         - - '~/components'
           - './apps/client/components'
-        - - '~/pages'
-          - './apps/client/pages'
+        - - '~/routes'
+          - './apps/client/routes'
         - - '~/services'
           - './apps/client/services'
       extensions: ['.ts', '.js', '.jsx', '.ts', '.tsx', '.json']

@@ -9,7 +9,7 @@
     "dev": "vite serve",
     "build": "vite build",
     "preview": "vite preview",
-    "typecheck": "tsc -b",
+    "typecheck": "react-router typegen && tsc -b",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "e2e": "playwright test",
