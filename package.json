@@ -10,7 +10,7 @@
     "dev": "nx g client serve",
     "build": "nx g client build",
     "preview": "nx g client preview",
-    "typecheck": "react-router typegen && tsc -b",
+    "typecheck": "tsc -b",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "e2e": "playwright test",
