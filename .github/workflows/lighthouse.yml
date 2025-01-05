@@ -11,8 +11,14 @@ jobs:
         working-directory: ./apps/client
     strategy:
       matrix:
-        node-version: [22]
+        node-version: [22, lts/*]
     steps:
+      - name: Download Client Build
+        uses: actions/download-artifact@v4
+        with:
+          name: client-build_${{ matrix.node-version }}
+          github-token: ${{ secrets.GH_PAT }}
+          run-id: 1234
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
       - name: Use Node.js ${{ matrix.node-version }}
@@ -20,12 +26,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile && pnpm add -g @lhci/cli@0.14.x
-      - name: Build
-        run: pnpm run build
-        env:
-          VITE_GROWTH_BOOK_KEY: ${{ secrets.VITE_GROWTH_BOOK_KEY }}
+      - name: Install lhci
+        run: pnpm add -g @lhci/cli@0.14.x
       - run: lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
