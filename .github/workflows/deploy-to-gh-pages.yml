@@ -11,19 +11,19 @@ on:
 
 permissions:
   contents: read
-  pages: write
   id-token: write
 
 concurrency:
   group: 'pages'
   cancel-in-progress: true
 
+defaults:
+  run:
+    working-directory: ./apps/client
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./apps/client
     strategy:
       matrix:
         node-version: [22]
@@ -49,11 +49,11 @@ jobs:
 
   deploy:
     needs: build
-
+    permissions:
+      pages: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
