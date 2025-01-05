@@ -64,7 +64,6 @@
     "microblogging"
   ],
   "engines": {
-    "node": ">=20.9",
     "pnpm": ">=9.8"
   },
   "packageManager": "pnpm@9.15.1",

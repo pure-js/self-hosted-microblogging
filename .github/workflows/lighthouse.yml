@@ -11,15 +11,14 @@ jobs:
         working-directory: ./apps/client
     strategy:
       matrix:
-        # node-version: [22, lts/*]
-        node-version-file: .node-version
+        node-version: [22, lts]
     steps:
       - name: Download Client Build
         uses: actions/download-artifact@v4
         with:
           name: client-build_${{ matrix.node-version }}
           github-token: ${{ secrets.GH_PAT }}
-          run-id: 1234
+          # run-id: 1234
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
       - name: Use Node.js ${{ matrix.node-version }}
