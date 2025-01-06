@@ -8,8 +8,8 @@ interface IAuthor {
 }
 
 function Author({ userId }: IAuthor) {
-  const [name, setName] = useState();
-  const [username, setUsername] = useState();
+  const [name, setName] = useState<string>('');
+  const [username, setUsername] = useState<string>('');
 
   async function authors() {
     const currentAuthor = await db.authors.get(userId);
@@ -60,7 +60,7 @@ export interface BlogPostProps {
   date?: string;
   htmlDatetime?: string;
   userId: string;
-  onDelete?: (arg0: string) => void;
+  onDelete?: (id: number) => void;
 }
 
 export interface IUser {
@@ -177,7 +177,7 @@ function BlogPost({
               title="Remove post"
               type="button"
               onClick={() => {
-                onDelete(id);
+                if (onDelete) onDelete(id);
               }}
             >
               <svg
