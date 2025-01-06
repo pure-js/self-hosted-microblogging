@@ -88,12 +88,7 @@ const router = createBrowserRouter(
 root.render(
   <StrictMode>
     <Suspense fallback={<>loading...</>}>
-      <RouterProvider
-        router={router}
-        future={{
-          v7_startTransition: true,
-        }}
-      />
+      <RouterProvider router={router} />
     </Suspense>
   </StrictMode>,
 );
