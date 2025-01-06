@@ -30,11 +30,11 @@
     "url": "https://github.com/pure-js/self-hosted-microblogging/issues"
   },
   "devDependencies": {
-    "@nx/eslint": "20.1.4",
-    "@nx/playwright": "20.1.4",
-    "@nx/storybook": "20.1.4",
-    "@nx/vite": "20.1.4",
-    "@nx/web": "20.1.4",
+    "@nx/eslint": "20.3.0",
+    "@nx/playwright": "20.3.0",
+    "@nx/storybook": "20.3.0",
+    "@nx/vite": "20.3.0",
+    "@nx/web": "20.3.0",
     "@playwright/test": "^1.49.1",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
