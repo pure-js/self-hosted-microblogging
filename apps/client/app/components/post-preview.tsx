@@ -60,7 +60,7 @@ export interface BlogPostProps {
   date?: string;
   htmlDatetime?: string;
   userId: string;
-  onDelete?: (id: number) => void;
+  onDelete: (id: number) => void;
 }
 
 export interface IUser {
@@ -177,7 +177,7 @@ function BlogPost({
               title="Remove post"
               type="button"
               onClick={() => {
-                if (onDelete) onDelete(id);
+                onDelete(id);
               }}
             >
               <svg

@@ -9,7 +9,7 @@ import { timestampToLocaleString } from '~/services/timestamp-to-locale-string';
 import type { IBlogPost } from '~/components/post-preview';
 import PostPreview from '~/components/post-preview';
 
-function handleDeleteStory(id: string) {
+function handleDeleteStory(id: number) {
   db.posts.delete(id);
 }
 
