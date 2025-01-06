@@ -1,5 +1,4 @@
 import { useMatches } from 'react-router';
-// import type { Handle } from 'react-router';
 
 import { breadcrumbs, crumb as StCrumb } from './breadcrumbs.css';
 
