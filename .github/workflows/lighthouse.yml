@@ -11,7 +11,7 @@ jobs:
         working-directory: ./apps/client
     strategy:
       matrix:
-        node-version: [22, lts/jod]
+        node-version: [22, latest]
     steps:
       - name: Download Client Build
         uses: actions/download-artifact@v4

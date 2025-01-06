@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [22, lts/jod]
+        node-version: [22, latest]
     defaults:
       run:
         working-directory: ./apps/client
