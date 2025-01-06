@@ -3,6 +3,9 @@ name: Lighthouse CI
 on:
   push:
 
+permissions:
+  actions: read
+
 jobs:
   lighthouseci:
     runs-on: ubuntu-latest
@@ -17,8 +20,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: client-build_${{ matrix.node-version }}
-          github-token: ${{ secrets.GH_PAT }}
-          # run-id: 1234
+          github-token: ${{ github.token }}
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
       - name: Use Node.js ${{ matrix.node-version }}
