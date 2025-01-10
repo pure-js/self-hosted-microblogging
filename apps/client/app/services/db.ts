@@ -7,6 +7,8 @@ export interface IAuthor {
   id: string;
   username: string;
   name: string;
+  dob: string;
+  createdAt: number;
 }
 
 export interface IPost {
@@ -42,6 +44,11 @@ export const db = new MySubClassedDexie();
 db.posts.count((count) => {
   if (count === 0) {
     db.posts.bulkPut(postsJson.result);
-    db.authors.bulkPut(authorsJson);
+    db.authors.bulkPut(
+      authorsJson.map((author) => ({
+        ...author,
+        createdAt: Date.parse(author.createdAt),
+      })),
+    );
   }
 });

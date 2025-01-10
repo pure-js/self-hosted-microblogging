@@ -4,7 +4,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '~/services/db';
 import type { IBlogPost } from '~/components/post-preview';
 
-function Post({ heading, text }: IBlogPost) {
+function Post({ heading, text }: Partial<IBlogPost>) {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
