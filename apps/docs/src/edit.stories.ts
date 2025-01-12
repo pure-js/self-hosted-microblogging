@@ -3,7 +3,7 @@ import type { Meta } from '@storybook/react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 // import { within, userEvent } from '@storybook/testing-library';
 
-import { EditPost } from './edit';
+import { EditPost } from 'client/app/routes/posts/[postId]/edit';
 
 const meta = {
   title: 'Pages/EditPost',

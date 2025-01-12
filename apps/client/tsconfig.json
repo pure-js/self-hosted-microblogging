@@ -11,6 +11,7 @@
     "./vite-env.d.ts",
     "**/.server/**/*",
     "**/.client/**/*",
+    "**/docs/**/*",
     ".react-router/types/**/*"
   ],
   "types": ["node", "vite/client"]
