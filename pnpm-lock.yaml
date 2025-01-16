@@ -119,6 +119,9 @@ importers:
       '@vanilla-extract/css':
         specifier: ^1.15.5
         version: 1.16.1
+      daisyui:
+        specifier: 5.0.0-beta.1
+        version: 5.0.0-beta.1
       dexie:
         specifier: ^4.0.8
         version: 4.0.8
@@ -195,9 +198,6 @@ importers:
       cssnano:
         specifier: ^6.0.1
         version: 6.0.1(postcss@8.4.49)
-      daisyui:
-        specifier: 5.0.0-beta.1
-        version: 5.0.0-beta.1
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
