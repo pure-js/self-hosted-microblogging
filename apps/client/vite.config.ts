@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
-import { reactRouter } from '@react-router/dev/vite';
 
 import MillionLint from '@million/lint';
 import { defineConfig } from 'vite';
@@ -29,7 +28,6 @@ export default defineConfig({
       },
     }),
     vanillaExtractPlugin(),
-    reactRouter(),
     VitePWA(),
   ],
   define: {
