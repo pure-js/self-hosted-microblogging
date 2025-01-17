@@ -1,14 +1,16 @@
 @import 'tailwindcss';
 
+@plugin "@tailwindcss/typography";
+
 @plugin "daisyui" {
   logs: true;
   root: ':root';
-  include: button, badge, input, card;
-  exclude: badge;
+  include: button, input, card, navbar;
   themes:
     light --default,
     dark --prefersdark,
-    cupcake;
+    forest,
+    winter;
 }
 
 @plugin "daisyui/theme" {
@@ -57,7 +59,3 @@
   --depth: 0;
   --noise: 0;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
