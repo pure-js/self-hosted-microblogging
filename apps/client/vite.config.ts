@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
 // import { reactRouter } from '@react-router/dev/vite';
-// import autoprefixer from 'autoprefixer';
 // import tailwindcss from 'tailwindcss';
 // import tsconfigPaths from 'vite-tsconfig-paths';
 
@@ -9,6 +8,7 @@ import MillionLint from '@million/lint';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 // import browserslist from 'browserslist';
 // import { browserslistToTargets } from 'lightningcss';
@@ -30,6 +30,7 @@ export default defineConfig({
     MillionLint.vite({
       enabled: true,
     }),
+    tailwindcss(),
     react({
       babel: {
         plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
