@@ -1,5 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable import/no-cycle */
 /* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import MillionLint from '@million/lint';
 import { defineConfig } from 'vite';
