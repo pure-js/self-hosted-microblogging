@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.12.3](https://github.com/pure-js/self-hosted-microblogging/compare/v2.12.2...v2.12.3) (2025-01-17)
+
+
+### Bug Fixes
+
+* 2 type errors ([#443](https://github.com/pure-js/self-hosted-microblogging/issues/443)) ([da8e1fa](https://github.com/pure-js/self-hosted-microblogging/commit/da8e1fa2bddb75f78650ba563bcbbeb60b619242))
+* CSS styling of the app ([#453](https://github.com/pure-js/self-hosted-microblogging/issues/453)) ([52d5cba](https://github.com/pure-js/self-hosted-microblogging/commit/52d5cbaeca16af59642b38b591842e268a48b701))
+* move spec file to the corresponding folder ([#444](https://github.com/pure-js/self-hosted-microblogging/issues/444)) ([19d6325](https://github.com/pure-js/self-hosted-microblogging/commit/19d63255f13b15aabf5471d0f41b35e04250a832))
+* only 9 typing errors left ([#437](https://github.com/pure-js/self-hosted-microblogging/issues/437)) ([3c25f61](https://github.com/pure-js/self-hosted-microblogging/commit/3c25f610d34323665beda905264bc1b89bfddb65))
+
 ## [2.12.2](https://github.com/pure-js/self-hosted-microblogging/compare/v2.12.1...v2.12.2) (2025-01-04)
 
 
