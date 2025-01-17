@@ -48,7 +48,7 @@ function Home() {
   const featSearchBar = useFeature('search-bar').on;
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto mb-4 px-4">
       <main className="grid grid-cols-12 gap-1">
         {featSearchBar && <Search />}
         <section
