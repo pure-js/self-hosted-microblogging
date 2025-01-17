@@ -21,6 +21,7 @@ plugins:
   - eslint-plugin-react-compiler
   - react
   - unicorn
+ignorePatterns: ['**/client/vite.config.ts']
 rules:
   import/prefer-default-export: off
   react/jsx-filename-extension: [2, { extensions: ['.jsx', '.tsx'] }]
