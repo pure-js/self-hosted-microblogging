@@ -1,23 +1,15 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable import/no-cycle */
 /* eslint-disable import/no-extraneous-dependencies */
-// import { reactRouter } from '@react-router/dev/vite';
-// import autoprefixer from 'autoprefixer';
-// import tailwindcss from 'tailwindcss';
-// import tsconfigPaths from 'vite-tsconfig-paths';
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import MillionLint from '@million/lint';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
-// import browserslist from 'browserslist';
-// import { browserslistToTargets } from 'lightningcss';
 
-// const path = require('node:path');
-
-const ReactCompilerConfig = {
-  /* ... */
-};
+const ReactCompilerConfig = {};
 
 export default defineConfig({
   base:
@@ -30,27 +22,18 @@ export default defineConfig({
     MillionLint.vite({
       enabled: true,
     }),
+    tailwindcss(),
     react({
       babel: {
         plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
       },
     }),
-    vanillaExtractPlugin(), // reactRouter(),
-    // tsconfigPaths(),
+    vanillaExtractPlugin(),
     VitePWA(),
   ],
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version),
   },
-  server: {
-    // open: true,
-  },
-  // css: {
-  //   transformer: 'lightningcss',
-  //   lightningcss: {
-  //     targets: browserslistToTargets(browserslist('>= 0.25%')),
-  //   },
-  // },
   resolve: {
     alias: [
       {

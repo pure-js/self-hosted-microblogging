@@ -1,3 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui" {
+  logs: true;
+  root: ':root';
+  include: button, input, textarea, card, navbar;
+  themes:
+    light --default,
+    dark --prefersdark,
+    forest,
+    winter;
+}
+
+@plugin "daisyui/theme" {
+  name: 'winter';
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+}
+
+@plugin "daisyui/theme" {
+  name: 'forest';
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+}
