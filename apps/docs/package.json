@@ -9,7 +9,8 @@
     "lint": "eslint . --flag unstable_ts_config",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic"
   },
   "dependencies": {
     "client": "workspace:*",
