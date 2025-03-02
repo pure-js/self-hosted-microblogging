@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import PostPreview from './post-preview';
+import PostPreview from 'client/app/components/post-preview';
 
 const meta = {
   title: 'Components/PostPreview',

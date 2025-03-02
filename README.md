@@ -10,8 +10,13 @@ The app allows you to browse your news feed, add new posts, edit and delete them
 - daisyUI & TailwindCSS
 - Dexie.js (indexedDB wrapper)
 - Storybook
+- [NX](https://nx.dev) (Smart Monorepos · Fast CI)
 
 ## Getting Started
+
+### Pre-installation
+
+In addition to Node.js, you should have [pnpm](https://pnpm.io) installed on your machone
 
 ### Installation
 

@@ -40,7 +40,6 @@
     "@typescript-eslint/parser": "^6.21.0",
     "@vitest/ui": "^1.6.0",
     "browserslist": "~4.22.3",
-    "chromatic": "~9.0.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
@@ -62,8 +61,8 @@
     "microblogging"
   ],
   "engines": {
-    "pnpm": ">=9.8"
+    "pnpm": ">=10"
   },
-  "packageManager": "pnpm@9.15.1",
+  "packageManager": "pnpm@10.5.2",
   "nx": {}
 }
