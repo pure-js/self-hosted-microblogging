@@ -6,6 +6,9 @@ on:
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./apps/docs
     strategy:
       matrix:
         node-version: [22]
