@@ -24,6 +24,8 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Build Storybook
+        run: pnpm run build-storybook
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:
