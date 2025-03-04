@@ -23,24 +23,24 @@
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@react-router/dev": "^7.1.2",
-    "@tailwindcss/vite": "4.0.0-beta.9",
+    "@tailwindcss/vite": "4.0.9",
     "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "@types/uuid": "^9.0.8",
     "@vanilla-extract/vite-plugin": "^4.0.19",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitejs/plugin-react-swc": "~3.7.2",
+    "@vitejs/plugin-react-swc": "~3.8.0",
     "@vitest/ui": "^1.6.0",
     "babel-plugin-react-compiler": "19.0.0-beta-37ed2a7-20241206",
     "chromatic": "~9.0.0",
     "msw": "^1.3.5",
     "prettier": "3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.10",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "standard-version": "^9.5.0",
-    "tailwindcss": "4.0.0-beta.9",
+    "tailwindcss": "4.0.9",
     "typescript": "^5.7.3",
-    "vite": "^6.0.7",
+    "vite": "^6.2.0",
     "vite-plugin-pwa": "^0.21.1",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^2.1.8"
@@ -52,7 +52,7 @@
     "@react-router/serve": "^7.1.2",
     "@tailwindcss/typography": "^0.5.16",
     "@vanilla-extract/css": "^1.17.0",
-    "daisyui": "5.0.0-beta.1",
+    "daisyui": "5.0.0",
     "dexie": "^4.0.11",
     "dexie-react-hooks": "^1.1.7",
     "isbot": "^5.1.21",
@@ -72,5 +72,5 @@
   "msw": {
     "workerDirectory": "public"
   },
-  "packageManager": "pnpm@9.15.1"
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }
