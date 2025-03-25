@@ -58,7 +58,7 @@
     "isbot": "^5.1.21",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.1.2",
+    "react-router": "^7.4.0",
     "theme-change": "^2.5.0",
     "uuid": "^9.0.1"
   },
