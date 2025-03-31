@@ -48,6 +48,7 @@
   "dependencies": {
     "@growthbook/growthbook-react": "^0.20.0",
     "@million/lint": "^1.0.14",
+    "@react-router/fs-routes": "^7.4.1",
     "@react-router/node": "^7.1.2",
     "@react-router/serve": "^7.1.2",
     "@tailwindcss/typography": "^0.5.16",

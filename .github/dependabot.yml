@@ -6,20 +6,24 @@ updates:
     schedule:
       interval: 'weekly'
     groups:
-      react-dependencies:
+      react:
         patterns:
           - 'react*'
           - '@types/react*'
         exclude-patterns:
           - 'react-router'
-      storybook-group:
+      react-router:
+        patterns:
+          - 'react-router'
+          - '@react-router/*'
+      storybook:
         patterns:
           - 'storybook*'
           - '@storybook/*'
-      eslint-group:
+      eslint:
         patterns:
           - 'eslint*'
           - '@typescript-eslint/*'
-      nx-group:
+      nx:
         patterns:
           - '@nx/*'

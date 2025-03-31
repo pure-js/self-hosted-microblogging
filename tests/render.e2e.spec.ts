@@ -2,13 +2,13 @@ import { test, expect } from '@playwright/test';
 
 const BASE_PATH = '/self-hosted-microblogging';
 
-test('homepage has Micrblogging in title and get started link linking to the new post page', async ({
+test('The home page has Micrblogging in the title and get started link leading to the new post page', async ({
   page,
 }) => {
   await page.goto('./');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Local microblogging client/);
+  await expect(page).toHaveTitle(/Self-hosted microblogging client/);
 
   // create a locator
   const newPost = page.getByText('New Post');
