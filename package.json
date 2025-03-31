@@ -36,7 +36,7 @@
     "@nx/vite": "20.1.4",
     "@nx/web": "20.1.4",
     "@playwright/test": "^1.49.1",
-    "@storybook/experimental-addon-test": "^8.6.3",
+    "@storybook/experimental-addon-test": "^8.6.11",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitest/ui": "^1.6.0",
