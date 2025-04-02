@@ -94,7 +94,9 @@ function AddPost() {
               />
             </div>
             <div className="mb-3">
+              <label htmlFor="messageTextarea">The message</label>
               <textarea
+                id="messageTextarea"
                 placeholder="Write your text..."
                 rows={5}
                 className="textarea w-full text-lg"
