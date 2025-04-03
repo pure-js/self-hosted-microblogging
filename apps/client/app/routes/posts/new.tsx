@@ -94,6 +94,7 @@ function AddPost() {
               />
             </div>
             <div className="mb-3">
+              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
               <label htmlFor="messageTextarea">The message</label>
               <textarea
                 id="messageTextarea"
