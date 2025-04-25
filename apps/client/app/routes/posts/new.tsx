@@ -97,6 +97,7 @@ function AddPost() {
                   setHeading(e.target.value);
                 }}
               />
+              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
               <label htmlFor={titleId}>Title is required</label>
             </div>
             <div className="mb-3">
@@ -113,6 +114,7 @@ function AddPost() {
                   setText(e.target.value);
                 }}
               />
+              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
               <label htmlFor={textFieldId}>The message is required</label>
             </div>
             <div className="mb-3">
