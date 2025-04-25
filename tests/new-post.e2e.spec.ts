@@ -22,7 +22,7 @@ test('should show an error message when the title is empty', async ({
     .getByRole('textbox', { name: 'The message' })
     .fill('New post main text');
   await page.getByRole('button', { name: 'Post it' }).click();
-  await expect(page.getByText('Title is required')).toBeVisible();
+  await expect(page.getByLabel('Title is required')).toBeVisible();
 });
 
 test('should show an error message when the body is empty', async ({
@@ -30,5 +30,5 @@ test('should show an error message when the body is empty', async ({
 }) => {
   await page.getByRole('textbox', { name: 'Title' }).fill('New Post Heading');
   await page.getByRole('button', { name: 'Post it' }).click();
-  await expect(page.getByText('The message is required')).toBeVisible();
+  await expect(page.getByLabel('The message is required')).toBeVisible();
 });

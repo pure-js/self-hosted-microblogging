@@ -88,10 +88,13 @@ function AddPost() {
               <Input
                 placeholder="Title"
                 value={heading}
+                id="titleInput"
+                required
                 onChange={(e) => {
                   setHeading(e.target.value);
                 }}
               />
+              <label htmlFor="titleInput">Title is required</label>
             </div>
             <div className="mb-3">
               {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
@@ -102,10 +105,12 @@ function AddPost() {
                 rows={5}
                 className="textarea w-full text-lg"
                 value={text}
+                required
                 onChange={(e) => {
                   setText(e.target.value);
                 }}
               />
+              <label htmlFor="messageTextarea">The message is required</label>
             </div>
             <div className="mb-3">
               <textarea
