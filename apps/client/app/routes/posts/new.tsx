@@ -67,6 +67,9 @@ function AddPost() {
     addPost();
   }
 
+  const titleId = 'titleInput';
+  const textFieldId = 'messageTextarea';
+
   return (
     <div className="container mx-auto px-4">
       <div className="mb-3 grid grid-cols-12 gap-1">
@@ -88,19 +91,19 @@ function AddPost() {
               <Input
                 placeholder="Title"
                 value={heading}
-                id="titleInput"
+                id={titleId}
                 required
                 onChange={(e) => {
                   setHeading(e.target.value);
                 }}
               />
-              <label htmlFor="titleInput">Title is required</label>
+              <label htmlFor={titleId}>Title is required</label>
             </div>
             <div className="mb-3">
               {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-              <label htmlFor="messageTextarea">The message</label>
+              <label htmlFor={textFieldId}>The message</label>
               <textarea
-                id="messageTextarea"
+                id={textFieldId}
                 placeholder="Write your text..."
                 rows={5}
                 className="textarea w-full text-lg"
@@ -110,7 +113,7 @@ function AddPost() {
                   setText(e.target.value);
                 }}
               />
-              <label htmlFor="messageTextarea">The message is required</label>
+              <label htmlFor={textFieldId}>The message is required</label>
             </div>
             <div className="mb-3">
               <textarea
