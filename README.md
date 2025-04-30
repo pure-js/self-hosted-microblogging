@@ -16,7 +16,7 @@ The app allows you to browse your news feed, add new posts, edit and delete them
 
 ### Pre-installation
 
-In addition to Node.js, you should have [pnpm](https://pnpm.io) installed on your machone
+In addition to [Node.js](https://nodejs.org/en/download/package-manager/all#fnm), you should have [pnpm](https://pnpm.io) installed on your machine.
 
 ### Installation
 
