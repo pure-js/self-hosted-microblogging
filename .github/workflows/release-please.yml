@@ -12,5 +12,4 @@ jobs:
       - uses: googleapis/release-please-action@v4
         with:
           release-type: node
-          package-name: release-please-action
           token: ${{ secrets.GITHUB_TOKEN }}
