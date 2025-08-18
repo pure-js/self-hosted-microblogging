@@ -1,0 +1,33 @@
+name: Build Client App
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        bun-version: [latest]
+    defaults:
+      run:
+        working-directory: ./apps/client
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - name: Use Bun ${{ matrix.bun-version }}
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        run: pnpm run build
+        env:
+          VITE_GROWTH_BOOK_KEY: ${{ secrets.VITE_GROWTH_BOOK_KEY }}
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: client-build_${{ matrix.bun-version }}
+          path: apps/client/dist/
