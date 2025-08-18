@@ -18,7 +18,8 @@
     "release": "standard-version",
     "lint": "eslint apps/client --ext .tsx,.jsx,.js,.ts",
     "format:check": "prettier --check .",
-    "format:write": "prettier --write ."
+    "format:write": "prettier --write .",
+    "knip": "knip"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "@nx/web": "20.1.4",
     "@playwright/test": "^1.49.1",
     "@storybook/experimental-addon-test": "^8.6.3",
+    "@types/node": "^22.15.29",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitest/ui": "^3.1.2",
@@ -52,6 +54,7 @@
     "eslint-plugin-react-compiler": "19.0.0-beta-37ed2a7-20241206",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-unicorn": "^55.0.0",
+    "knip": "^5.59.1",
     "nx": "20.1.4",
     "prettier": "3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
