@@ -9,8 +9,6 @@ import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
-const ReactCompilerConfig = {};
-
 export default defineConfig({
   base:
     process.env.NODE_ENV === 'production' ? '/self-hosted-microblogging/' : '/',
@@ -25,7 +23,7 @@ export default defineConfig({
     tailwindcss(),
     react({
       babel: {
-        plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
+        plugins: [['babel-plugin-react-compiler']],
       },
     }),
     vanillaExtractPlugin(),
