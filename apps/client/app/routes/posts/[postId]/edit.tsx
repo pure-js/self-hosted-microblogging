@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { useState } from 'react';
-import { redirect, useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import { useLiveQuery } from 'dexie-react-hooks';
 
 import { db } from '~/services/db';
@@ -21,6 +21,7 @@ export function EditPost({ post }: IBlogPostProps) {
   const [status, setStatus] = useState<IStatus | null>(null);
   const [hashtags, setHashtags] = useState('');
 
+  const navigate = useNavigate();
   const { postId } = useParams();
 
   function handleImageChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -57,7 +58,7 @@ export function EditPost({ post }: IBlogPostProps) {
               status: 'success',
               message: `Post "${heading}" successfully updated. Post id ${postId}`,
             });
-            redirect('/');
+            navigate('/');
           } else {
             setStatus({
               status: 'info',
@@ -168,7 +169,25 @@ function EditPostWrapper() {
     db.posts.filter(({ id }) => id === Number(postId)).toArray(),
   );
 
-  return posts ? <EditPost post={posts[0]} /> : null;
+  if (!posts) {
+    return null;
+  }
+
+  if (posts.length === 0) {
+    return (
+      <div className="container mx-auto px-4">
+        <div className="mb-3 grid grid-cols-12 gap-1">
+          <div className="col-span-12 md:col-span-8 lg:col-span-6">
+            <div className="alert alert-info mt-4">
+              <span>Post not found.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return <EditPost post={posts[0]} />;
 }
 
 export default EditPostWrapper;
