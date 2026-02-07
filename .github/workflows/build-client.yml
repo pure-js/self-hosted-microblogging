@@ -28,7 +28,7 @@ jobs:
         env:
           VITE_GROWTH_BOOK_KEY: ${{ secrets.VITE_GROWTH_BOOK_KEY }}
       - name: Upload
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: client-build_${{ matrix.node-version }}
           path: apps/client/dist/
