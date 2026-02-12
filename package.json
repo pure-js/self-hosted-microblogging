@@ -1,6 +1,6 @@
 {
   "name": "self-hosted-microblogging",
-  "version": "2.12.3",
+  "version": "2.12.4",
   "description": "Self-hosted Microblogging Frontend App",
   "main": "apps/client/app/index.tsx",
   "homepage": "https://pure-js.github.io/self-hosted-microblogging/",
